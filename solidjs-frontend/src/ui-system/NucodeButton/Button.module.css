@@ -1,0 +1,97 @@
+.button {
+  padding: 1rem;
+  border-radius: var(--radius_default);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.label {
+  font-size: 1.4rem;
+}
+
+.button[disabled] {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+.labeled {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+/* CONTAINED */
+.variant--contained {
+  border: none;
+  box-shadow: var(--shadow_button);
+  background: -webkit-linear-gradient(
+    top,
+    rgb(63, 103, 255) 0%,
+    rgb(58, 65, 229) 100%
+  );
+}
+
+.variant--contained .label {
+  color: var(--color_primary_contrast_default);
+}
+
+.variant--contained:hover {
+  box-shadow: var(--shadow_highlight_subtle);
+}
+
+.variant--contained:active {
+  box-shadow: var(--shadow_highlight_strong);
+}
+
+/* VAGUE */
+.variant--vague {
+  background-color: rgba(var(--color_primary_default_rgb), 5%);
+  color: var(--color_primary_default);
+}
+
+.variant--vague:hover {
+  background-color: rgba(var(--color_primary_default_rgb), 15%);
+  box-shadow: var(--shadow_highlight_subtle);
+}
+
+.variant--vague:active {
+  box-shadow: var(--shadow_highlight_strong);
+}
+
+/* OUTLINED */
+.variant--outlined {
+  border: 1px solid var(--color_line_default);
+  background-color: transparent;
+  color: var(--color_text_default);
+}
+
+.variant--outlined:hover {
+  /* box-shadow: var(--shadow_highlight_subtle); */
+  background-color: rgb(246, 249, 251);
+}
+
+.variant--outlined:active {
+  box-shadow: var(--shadow_highlight_strong);
+}
+
+/* TEXT */
+.variant--text {
+  border: none;
+  background-color: transparent;
+  color: var(--color_primary_default);
+}
+.variant--text:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.variant--text:active {
+  box-shadow: var(--shadow_highlight_subtle);
+}

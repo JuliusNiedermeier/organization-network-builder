@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  gap: 2rem;
+  overflow: auto;
+  height: 100%;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.logo_rect {
+  height: 1.5rem;
+  width: 4rem;
+  background: linear-gradient(60deg, #378657, #73b0a2);
+}

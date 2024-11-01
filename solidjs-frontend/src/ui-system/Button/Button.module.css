@@ -1,0 +1,89 @@
+.button {
+  padding: 1rem;
+  border-radius: var(--radius_default);
+  font-size: 0.85rem;
+  transition: all 100ms ease;
+  cursor: pointer;
+  font-weight: bold;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button > * {
+  display: block;
+}
+
+.button[disabled] {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+.labeled {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* CONTAINED */
+.variant--contained {
+  border: none;
+  background-color: var(--color_surface_contrast_default);
+  color: var(--color_text_contrast);
+}
+
+.variant--contained:hover {
+  box-shadow: var(--shadow--highlight--subtle);
+}
+
+.variant--contained:active {
+  box-shadow: var(--shadow--highlight--strong);
+}
+
+/* VAGUE */
+.variant--vague {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: var(--color_text_default);
+}
+
+.variant--vague:hover {
+  box-shadow: var(--shadow--highlight--subtle);
+}
+
+.variant--vague:active {
+  box-shadow: var(--shadow--highlight--strong);
+}
+
+/* OUTLINED */
+.variant--outlined {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+  color: var(--color_text_default);
+}
+
+.variant--outlined:hover {
+  box-shadow: var(--shadow--highlight--subtle);
+}
+
+.variant--outlined:active {
+  box-shadow: var(--shadow--highlight--strong);
+}
+
+/* TEXT */
+.variant--text {
+  border: none;
+  background-color: transparent;
+  color: var(--color_text_default);
+}
+.variant--text:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.variant--text:active {
+  box-shadow: var(--shadow--highlight--subtle);
+}

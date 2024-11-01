@@ -1,0 +1,52 @@
+.container {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.row * {
+  white-space: nowrap;
+}
+
+.row {
+  /* border-bottom: 1px solid var(--color_line_default); */
+}
+
+.activity {
+  padding: 1rem;
+  border-width: 0 1px;
+  border-style: solid;
+  border-color: var(--color_line_default);
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  overflow: hidden;
+
+  transition: all 150ms ease;
+
+  border: none;
+  background-color: var(--color_surface_default);
+  box-shadow: var(--shadow_default);
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+.activity:hover {
+  background-color: var(--color_surface_dimm);
+}
+
+.scope {
+  padding: 0.5rem 1rem;
+  background-color: #8ba5ff;
+}
+
+.activity__column {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+.activity__column__label {
+  font-weight: bold;
+}

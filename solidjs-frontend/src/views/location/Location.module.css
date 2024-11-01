@@ -1,0 +1,13 @@
+.dashboard,
+.navigation {
+  padding: 4rem;
+}
+
+.dashboard {
+  background-color: var(--color_surface_dimm);
+  height: 100%;
+}
+
+.activities {
+  height: 100%;
+}

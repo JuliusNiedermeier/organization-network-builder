@@ -1,0 +1,32 @@
+.container {
+  display: grid;
+  grid-template-areas: "navigation navigation" "sidebar main";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: min-content auto;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.navigation,
+.sidebar,
+.main {
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.navigation {
+  grid-area: navigation;
+  border-bottom: 1px solid var(--color_line_strong);
+}
+
+.sidebar {
+  grid-area: sidebar;
+  border-right: 1px solid var(--color_line_strong);
+}
+
+.main {
+  grid-area: main;
+  /* overflow: auto; */
+}

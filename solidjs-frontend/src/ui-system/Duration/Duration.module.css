@@ -1,0 +1,43 @@
+.duration {
+  display: flex;
+  align-items: center;
+}
+
+.from,
+.to {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.from:hover,
+.to:hover {
+  border-color: blue;
+  /* background-color: rgba(0, 0, 255, 0.1); */
+}
+
+.from:active,
+.to:active {
+  box-shadow: 0 0 0 3px rgba(0, 0, 255, 0.2);
+}
+
+.line {
+  height: 1px;
+  width: 2rem;
+  background-color: gray;
+  margin-right: 1rem;
+  position: relative;
+}
+
+.line::after {
+  content: "";
+  position: absolute;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  right: 0;
+  top: 0;
+  transform: translateY(-50%);
+  background-color: gray;
+}

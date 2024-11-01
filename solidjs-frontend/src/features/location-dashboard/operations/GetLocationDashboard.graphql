@@ -1,0 +1,9 @@
+query GetLocationDashboard($locationID: ID!) {
+  locations(where: { ID: $locationID }) {
+    ID
+    name
+    company {
+      name
+    }
+  }
+}

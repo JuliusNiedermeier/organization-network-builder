@@ -1,0 +1,13 @@
+mutation CreateLocation($companyID: ID!, $name: String!) {
+  createLocations(
+    input: {
+      name: $name
+      company: { connect: { where: { node: { ID: $companyID } } } }
+    }
+  ) {
+    locations {
+      ID
+      name
+    }
+  }
+}

@@ -1,0 +1,8 @@
+query GetMe($userID: ID!) {
+  users(where: { ID: $userID }) {
+    ID
+    name
+    email
+    photo
+  }
+}

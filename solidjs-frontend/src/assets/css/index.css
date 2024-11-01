@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: var(--font_default);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: var(--color_background_default);
+  color: var(--color_text_default);
+}
+
+:root {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 1.4rem;
+  transition-duration: 100ms;
+  transition-timing-function: ease;
+  transition-property: color, background-color, box-shadow, border;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color_line_default);
+}
+
+h1 {
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+p,
+span {
+  /* color: var(--color_text_dimm); */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}

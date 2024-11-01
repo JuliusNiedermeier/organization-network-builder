@@ -1,0 +1,14 @@
+mutation CreateProject($userID: ID!, $companyName: String!) {
+  createCompanies(
+    input: {
+      name: $companyName
+      users: { connect: { where: { node: { ID: $userID } } } }
+    }
+  ) {
+    companies {
+      ID
+      name
+      description
+    }
+  }
+}

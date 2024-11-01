@@ -1,0 +1,14 @@
+query GetCompanyDashboard($companyID: ID) {
+  companies(where: { ID: $companyID }) {
+    ID
+    name
+    description
+    locations {
+      ID
+      name
+      activitiesAggregate {
+        count
+      }
+    }
+  }
+}

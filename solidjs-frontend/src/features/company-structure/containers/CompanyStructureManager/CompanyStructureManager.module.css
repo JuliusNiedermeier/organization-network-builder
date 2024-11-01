@@ -1,0 +1,16 @@
+.container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.toolbar {
+  padding: 2rem;
+  border-bottom: 1px solid var(--color_line_strong);
+}
+
+.map {
+  flex: 1;
+}

@@ -1,0 +1,13 @@
+query GetProjects($userID: ID!) {
+  users(where: { ID: $userID }, options: { limit: 1 }) {
+    companiesConnection {
+      edges {
+        node {
+          ID
+          name
+          description
+        }
+      }
+    }
+  }
+}

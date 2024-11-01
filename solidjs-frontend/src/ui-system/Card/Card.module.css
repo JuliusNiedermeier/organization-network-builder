@@ -1,0 +1,33 @@
+.container {
+  border-radius: var(--radius_default);
+  padding: 4rem;
+}
+
+.variant--vague {
+  background-color: var(--color_surface_default);
+}
+
+.variant--contained {
+  background-color: black;
+  color: var(--color_text_contrast);
+}
+
+.spacing--dense {
+  padding: 2rem;
+}
+
+.spacing--default {
+  padding: 4rem;
+}
+
+.spacing--lofty {
+  padding: 6rem;
+}
+
+.elevated {
+  box-shadow: var(--shadow_default);
+}
+
+.clickable {
+  cursor: pointer;
+}

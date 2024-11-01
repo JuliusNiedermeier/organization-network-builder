@@ -1,0 +1,32 @@
+{
+  "name": "functions",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "watch": "nodemon src/index.ts",
+    "debug": "SET DEBUG=@neo4j/graphql:execute && nodemon src/index.ts",
+    "typegen": "graphql-codegen --config codegen.yml"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "@graphql-tools/utils": "^8.6.13",
+    "@neo4j/graphql": "^3.4.0",
+    "@neo4j/graphql-ogm": "^3.6.2",
+    "apollo-server": "^3.9.0",
+    "dotenv": "^16.0.1",
+    "firebase-admin": "^10.2.0",
+    "graphql": "^16.5.0",
+    "neo4j-driver": "^4.4.6",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.8.1"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "2.11.8",
+    "@graphql-codegen/typescript": "^2.7.3",
+    "@graphql-codegen/typescript-resolvers": "^2.7.3",
+    "typescript": "^4.6.4"
+  },
+  "private": true
+}

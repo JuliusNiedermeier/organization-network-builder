@@ -1,0 +1,15 @@
+query GetCompanyPreview($ID: ID!) {
+  companies(where: { ID: $ID }, options: { limit: 1 }) {
+    ID
+    name
+    usersAggregate {
+      count
+    }
+    locationsAggregate {
+      count
+    }
+    subsidiaries {
+      ID
+    }
+  }
+}

@@ -1,0 +1,13 @@
+2. Die UI Lib optimieren / aufräumen.
+
+3. Toolbar kann z.B. eine einheitliche Komponente mit verschiedenen Styles wie "text", "contained", oder "vague" werden.
+
+4. Ist der Views-Ordner wirklich der richtige Weg um Layouts umzusetzen?
+
+5. Das Video mit der ausgelagerten Business- und UI-Logik verstehen und eventuell implementieren.
+
+6. Logik-Baum und Modul-Struktur für Dritte erstellen. Auch für mich verschafft das Übersicht.
+
+7. Alle Projektschritte kommunizieren und abhaken.
+
+Früher 11

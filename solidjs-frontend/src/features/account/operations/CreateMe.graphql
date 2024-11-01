@@ -1,0 +1,10 @@
+mutation CreateMe($ID: ID!, $name: String!, $email: String!, $photo: String!) {
+  createUsers(input: { ID: $ID, name: $name, email: $email, photo: $photo }) {
+    users {
+      ID
+      name
+      email
+      photo
+    }
+  }
+}

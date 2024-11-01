@@ -1,0 +1,91 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 2rem;
+}
+
+.timeline-container {
+  flex: 1;
+  position: relative;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.timeline-ticks {
+  width: min-content;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  border-bottom: 1px solid var(--color_line_strong);
+  position: sticky;
+  top: 0;
+  background-color: var(--color_background_default);
+  z-index: 1;
+}
+
+.timeline-tick {
+  height: 0.5rem;
+  width: 1px;
+  background-color: black;
+  margin: 0 2rem;
+  position: relative;
+  transition: margin 100ms ease;
+}
+
+.timeline-tick > span {
+  position: absolute;
+  left: 1rem;
+}
+
+.timeline-tick.accent {
+  background-color: black;
+  height: 3rem;
+}
+
+.timeline-body {
+  /* height: 10000px; */
+}
+
+.row {
+  padding: 0 2rem;
+  border-bottom: 1px solid var(--color_line_default);
+}
+
+.activity {
+  padding: 2rem;
+  border: solid var(--color_line_default);
+  border-width: 0 1px;
+  position: sticky;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.activity:hover {
+  background-color: var(--color_surface_default);
+  background-color: #eef3f7;
+}
+
+.activity:active {
+  border-color: blue;
+}
+
+.scope {
+  padding: 0.5rem 1rem;
+  background-color: #8ba5ff;
+  color: white;
+  border-radius: var(--radius_default);
+  font-size: 1.2rem;
+}
+
+.date {
+  padding: 2rem;
+  background-color: #8ba5ff;
+  display: inline-block;
+  margin-right: 2rem;
+}

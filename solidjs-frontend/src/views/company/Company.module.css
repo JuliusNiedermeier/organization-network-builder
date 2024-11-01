@@ -1,0 +1,14 @@
+.navigation {
+  padding: 1rem;
+}
+
+.company-dashboard {
+  padding: 4rem;
+  background-color: var(--color_surface_dimm);
+}
+
+.company-map,
+.company-dashboard {
+  overflow: hidden;
+  height: 100%;
+}

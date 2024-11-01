@@ -1,0 +1,15 @@
+mutation CreateSubsidiary($ID: ID!, $name: String!, $stake: Float!) {
+  createCompanies(
+    input: {
+      name: $name
+      holdings: {
+        connect: { where: { node: { ID: $ID } }, edge: { stake: $stake } }
+      }
+    }
+  ) {
+    companies {
+      ID
+      name
+    }
+  }
+}

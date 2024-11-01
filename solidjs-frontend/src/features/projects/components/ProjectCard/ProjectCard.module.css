@@ -1,0 +1,7 @@
+.container {
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 3rem;
+  background-color: var(--color_surface_default);
+  box-shadow: var(--shadow_default);
+}

@@ -1,0 +1,12 @@
+.container {
+  border-radius: 0.35rem;
+  background-color: dimgray;
+  background-color: slategray;
+  padding: 0.35rem 0.6rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.8rem;
+  color: rgb(240, 240, 240);
+}

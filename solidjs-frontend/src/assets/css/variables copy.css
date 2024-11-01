@@ -1,0 +1,18 @@
+:root {
+  --color-divider: #2c2c2c;
+  --color--text--bright: #ffffff;
+  --color--text--medium: #a1a4ae;
+  --color--text--dimm: white;
+  --radius-medium: 1rem;
+  --color--card--bright: #28303d;
+  --color--card--medium: #23272c;
+  --color--card--dimm: #1f262f;
+  --color-background: #161a1f;
+  --color-heading-3: #757575;
+  --color-brand: #3a29d5;
+  --color-success: #12c786;
+  --color-warn: orange;
+
+  --shadow--highlight--subtle: 0 0 0 0.25rem rgba(255, 255, 255, 0.025);
+  --shadow--highlight--strong: 0 0 0 0.25rem rgba(255, 255, 255, 0.1);
+}

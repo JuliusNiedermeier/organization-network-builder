@@ -1,0 +1,8 @@
+.avatar-collection {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.avatar {
+  margin-left: -1rem;
+}

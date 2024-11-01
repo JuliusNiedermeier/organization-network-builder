@@ -1,0 +1,54 @@
+:root {
+  --color-divider: rgb(225, 233, 240);
+  --color--text--bright: #000000;
+  --color--text--medium: #6a6a6c;
+  --color--text--dimm: rgb(183, 183, 183);
+  --radius-medium: 0.6rem;
+  --color--card--bright: #28303d;
+  --color--card--medium: rgb(238, 243, 247);
+  --color--card--dimm: #1f262f;
+  --color-background: #ffffff;
+  --color-heading-3: #757575;
+  --color-brand: rgba(2, 5, 211, 1);
+  --color-success: #12c786;
+  --color-warn: orange;
+
+  --shadow--highlight--subtle: 0 0 0 0.25rem rgba(0, 0, 0, 0.025);
+  --shadow--highlight--strong: 0 0 0 0.25rem rgba(0, 0, 0, 0.1);
+
+  /*##########################################*/
+
+  --font_default: Inter;
+
+  --color_primary_default: rgba(2, 5, 211, 1);
+  --color_primary_default_rgb: 2, 5, 211;
+  --color_primary_contrast_default: rgb(42, 42, 42);
+
+  --color_text_contrast: rgb(34, 34, 34);
+  --color_text_default: rgba(255, 255, 255, 0.81);
+  --color_text_dimm: rgb(165, 165, 165);
+
+  --color_background_default: #1b1b1b;
+
+  --color_surface_default: rgb(54, 54, 54);
+  --color_surface_dimm: rgb(43, 43, 43);
+  --color_surface_contrast_default: white;
+
+  --color_line_default: rgb(54, 54, 54);
+  --color_line_strong: rgb(99, 99, 99);
+
+  --color_destructive_default: rgba(255, 0, 0, 1);
+  --color_success_default: #12c786;
+  --color_alert_default: orange;
+
+  --radius_subtle: 4px;
+  --radius_default: 3px;
+  --radius_round: 8px;
+
+  --shadow_close: rgb(0 0 0 / 10%) 0 1px 1px 0px;
+  --shadow_default: rgb(0 0 0 / 10%) 0 1px 2px 0px;
+  --shadow_distant: rgb(0 0 0 / 10%) 0 2px 2px 0px;
+  --shadow_button: rgb(110 121 140 / 50%) 0 1px 2px 0px;
+  --shadow_highlight_subtle: 0 0 0 0.5rem rgba(0, 0, 0, 0.025);
+  --shadow_highlight_strong: 0 0 0 0.25rem var(--color_line_default);
+}

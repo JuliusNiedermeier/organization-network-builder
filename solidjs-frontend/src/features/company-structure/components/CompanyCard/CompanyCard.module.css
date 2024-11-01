@@ -1,0 +1,46 @@
+.container {
+  /* border-radius: 0.5rem; */
+  /* border: 1px solid lightgray; */
+  /* cursor: pointer; */
+  /* padding: 2rem; */
+  white-space: nowrap;
+  /* background-color: white; */
+  position: relative;
+  transition: all 250ms ease;
+  user-select: none;
+}
+
+.container:hover {
+  /* box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.1); */
+}
+
+.container:active {
+  /* box-shadow: 0 0 0 5px rgba(0, 0, 255, 0.2); */
+}
+
+.name {
+  color: rgb(59, 59, 59);
+}
+
+.meta {
+  color: black;
+  opacity: 0.5;
+}
+
+.container.selected {
+  /* background-color: #2828ca; */
+  /* border-color: transparent; */
+  /* box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); */
+}
+
+.container.selected .name {
+  color: white;
+}
+
+.container.selected .meta {
+  color: white;
+}
+
+.container.adjacent {
+  /* border: 2px solid blue; */
+}
